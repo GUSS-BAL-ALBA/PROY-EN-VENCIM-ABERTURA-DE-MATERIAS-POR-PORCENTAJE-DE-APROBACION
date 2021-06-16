@@ -1,0 +1,187 @@
+{UTF-8}
+Abandono  = A FUNCTION OF( Estudiantes Incritos M1,Porcentaje Abandono)
+	~	
+	~		|
+
+Abandono M2  = A FUNCTION OF( Estudiantes Inscritos M2,Porcentaje Abandono M2)
+	~	
+	~		|
+
+Aprobados M1  = A FUNCTION OF( Estudiantes Incritos M1,Porcentaje Aprobados)
+	~	
+	~		|
+
+Aprobados M2  = A FUNCTION OF( Estudiantes Inscritos M2,Pocentaje Aprobados M2)
+	~	
+	~		|
+
+Estudiantes Incritos M1  = A FUNCTION OF( Abandono,Aprobados M1,Inscripcion,Reprobados\
+		)
+	~	
+	~		|
+
+Estudiantes Inscritos M2  = A FUNCTION OF( Abandono M2,Aprobados M1,Aprobados M2,incripcion M2\
+		,Reprobados M2)
+	~	
+	~		|
+
+incripcion M2  = A FUNCTION OF( Estudiantes Inscritos M2,porcentaje de incripcion,Reprobados M2\
+		)
+	~	
+	~		|
+
+Inscripcion  = A FUNCTION OF( Estudiantes Incritos M1,Porcentaje Incritos Temporada,Reprobados\
+		)
+	~	
+	~		|
+
+Pocentaje Aprobados M2  = A FUNCTION OF( )
+	~	
+	~		|
+
+Porcentaje Abandono  = A FUNCTION OF( )
+	~	
+	~		|
+
+Porcentaje Abandono M2  = A FUNCTION OF( )
+	~	
+	~		|
+
+Porcentaje Aprobados  = A FUNCTION OF( Porcentaje Abandono,Porcentaje Reprobados)
+	~	
+	~		|
+
+porcentaje de incripcion  = A FUNCTION OF( )
+	~	
+	~		|
+
+Porcentaje Incritos Temporada  = A FUNCTION OF( )
+	~	
+	~		|
+
+Porcentaje Reprobados  = A FUNCTION OF( )
+	~	
+	~		|
+
+Porcentaje Reprobados M2  = A FUNCTION OF( )
+	~	
+	~		|
+
+Reprobados  = A FUNCTION OF( Estudiantes Incritos M1,Porcentaje Reprobados)
+	~	
+	~		|
+
+Reprobados M2  = A FUNCTION OF( Estudiantes Inscritos M2,Porcentaje Reprobados M2)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Parámetros de control de simulación
+	|
+
+FINAL TIME  = 100
+	~	Mes
+	~	El período final de la simulación.
+	|
+
+INITIAL TIME  = 0
+	~	Mes
+	~	El período inicial de la simulación.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Mes [0,?]
+	~	La frecuencia con la que se almacena la salida.
+	|
+
+TIME STEP  = 1
+	~	Mes [0,?]
+	~	El "Incremento de tiempo" para la simulación.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*Pantalla 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,110,0
+10,1,Porcentaje Incritos Temporada,111,109,60,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,2,Inscripcion,46,235,35,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,3,Estudiantes Incritos M1,257,190,38,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,4,Aprobados M1,456,204,50,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,5,Reprobados,236,320,40,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,6,Abandono,278,72,34,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,7,Porcentaje Reprobados,207,408,40,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,8,Porcentaje Abandono,379,49,35,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,9,Porcentaje Aprobados,579,81,37,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,10,1,2,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(54,150)|
+1,11,2,3,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(142,203)|
+1,12,3,5,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(260,252)|
+1,13,5,3,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(231,261)|
+1,14,3,4,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(344,180)|
+1,15,4,3,1,0,45,0,2,192,0,-1--1--1,|12||0-0-0,1|(357,205)|
+1,16,9,4,1,0,0,0,0,64,0,-1--1--1,,1|(483,108)|
+1,17,7,5,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(236,366)|
+1,18,3,6,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(290,143)|
+1,19,6,3,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(254,110)|
+1,20,8,6,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(320,50)|
+1,21,3,2,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(153,229)|
+10,22,Estudiantes Inscritos M2,864,240,41,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,23,Reprobados M2,923,385,53,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,24,Porcentaje Reprobados M2,854,463,54,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,25,Abandono M2,910,131,47,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,26,Porcentaje Abandono M2,963,47,48,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,27,Aprobados M2,1132,252,50,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,28,Pocentaje Aprobados M2,1191,131,50,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,29,22,23,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(839,338)|
+1,30,23,22,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(938,302)|
+1,31,24,23,1,0,0,0,0,64,0,-1--1--1,,1|(906,434)|
+1,32,25,22,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(908,185)|
+1,33,22,25,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(868,179)|
+1,34,26,25,0,0,0,0,0,64,0,-1--1--1,,1|(937,87)|
+1,35,22,27,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(987,278)|
+1,36,27,22,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(985,204)|
+1,37,28,27,0,0,0,0,0,64,0,-1--1--1,,1|(1162,189)|
+1,38,4,22,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(622,179)|
+1,39,5,2,1,0,0,0,0,64,0,-1--1--1,,1|(134,313)|
+1,40,8,9,1,0,0,0,0,64,0,-1--1--1,,1|(472,36)|
+1,41,7,9,1,0,0,0,0,64,0,-1--1--1,,1|(440,293)|
+10,42,incripcion M2,579,329,44,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,43,porcentaje de incripcion,550,405,44,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,44,43,42,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(529,366)|
+1,45,42,22,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(718,305)|
+1,46,23,42,1,0,43,0,2,192,0,-1--1--1,|12||0-0-0,1|(735,383)|
+1,47,22,42,1,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(686,245)|
+12,48,0,411,499,365,47,8,135,0,14,-1,0,0,0,-1--1--1,0-0-128,|18||255-255-255,0,0,0,0,0,0
+Modelo Causal para determinar la abertura de nuevas materias por porcentaje de aprobacion semestral en la carrera de Informatica
+///---\\\
+:L<%^E!@
+9:Actual
+23:0
+15:0,0,0,0,0,0
+19:110,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+5:Abandono
+35:Fecha
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+76:0
+77:0
+78:0
+79:0
+80:0
+81:0
+24:0
+25:0
+26:0
+75:
+43:
